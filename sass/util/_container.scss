@@ -1,0 +1,38 @@
+@use '../abstracts' as a;
+
+.container {
+  max-width: 1290px;
+  margin-inline: auto;
+}
+
+
+
+.card-container {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+
+
+
+@include a.bp(md) {
+  
+  .card-container {
+
+    flex-direction: column;
+
+  }
+
+  .flipped {
+    
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+
+}

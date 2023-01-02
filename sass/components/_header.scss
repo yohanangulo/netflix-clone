@@ -1,0 +1,40 @@
+@use '../abstracts' as a;
+
+header {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 56px;
+  padding-top: calc(20px + 0.5rem);
+  height: 4rem;
+  margin-bottom: 20px;
+
+  @include a.bp(md) {
+    padding-inline: 45px;
+  }
+
+  @include a.bp(sm) {
+    padding-top: 20px;
+    padding-inline: 5%;
+    margin-bottom: 0;
+  }
+
+  .logo svg{
+    width: 8.375rem;
+    fill: #e50914;
+
+    
+    @include a.bp(md) {
+      height: 2rem;
+      width: 6.75rem;
+    }
+    
+    @include a.bp(sm) {
+      height: 1.5rem;
+      width: auto;
+    }
+  }
+
+
+}
